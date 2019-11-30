@@ -2,12 +2,289 @@
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 
 	<body>
-		<div id="profile-container"></div>
+		<div id="resume-container">
+		<div id="profile-bar">
+			<div id="profile-image-container">
+				<img src="img/profile-crop.jpeg"/>
+			</div>
+			<div id="profile-name-container">
+				<div style="/* margin: auto; */position: relative;top: 50%;transform: translateY(-50%);">
+					<h1>Dhaval</h1>
+					<h1>Patel</h1></div>
+				</div>
+			<div id="profile-link-container">
+				
+				<div><img src="/img/linkedin.png"> <a href="https://www.linkedin.com/in/dhavalpateln/">dhavalpateln</a></div>
+				<div><img src="/img/email.png"> dhaval0024@gmail.com </div>
+				<div><img src="/img/email.png"> dpatel48@asu.edu </div>
+				<div><img src="/img/phone.png"> 480 - 494 - 7035 </div>
+				
+			</div>
+		</div>
+		
+		<div class="section-break">
+			<div class="section-header"><h2>Education and Work Experience</h2></div>
+			<div class="section-seperator"></div>
+		</div>
+		
+		<div id="workedu-container" style="height: 270px;">
+			
+			<div id="workedu-container-left" style="display: inline-block;width: 15%;height: 100%;"></div>
+			<div id="workedu-container-right" style="display: inline-block;width: 75%;height: 100%;"></div>
+			
+		
+		</div>
+		
+		<div id="asu-container" class="exp-detail-container">
+			<div id="asu-info" class="exp-info-container">
+				<h3>Arizona State University</h3>
+				<table>
+					<tr><th>Degree</th><td>Master</td></tr>
+					<tr><th>Field of Study</th><td>Computer Science</td></tr>
+					<tr><th>GPA</th><td>4 / 4</td></tr>
+					<tr><th>Expected Graduation Month</th><td>May 2020</td></tr>
+					<tr><th>Favorite Courses</th><td>Fundamentals of Statistical Learning, Natural Language Processing, Statistical Machine Learning, Artificial Intelligence</td></tr>
+				</table>
+			</div>
+			<div id="asu-loc" class="exp-loc-container">
+				<img style="width: 250px;/*height: 200px;*/" src="/img/asu.png"/>
+				<div>
+					<img style="width: 20px;height: 20px;vertical-align: middle;" src="/img/loc.png"/>
+					Tempe, Arizona, USA
+				</div>
+			</div>
+		</div>
+		
+		<div id="nirma-container" class="exp-detail-container">
+			<div id="nirma-info" class="exp-info-container">
+				<h3>Nirma University</h3>
+				<table>
+					<tr><th>Degree</th><td>Bachelor</td></tr>
+					<tr><th>Field of Study</th><td>Computer Science</td></tr>
+					<tr><th>GPA</th><td>8.24 / 10</td></tr>
+					<tr><th>Graduation Month</th><td>May 2018</td></tr>
+					<tr><th>Favorite Courses</th><td>Data Structures, Algorithms, Operating Systems, Machine Learning</td></tr>
+				</table>
+			</div>
+			<div id="nirma-loc" class="exp-loc-container">
+				<img style="width: 200px;height: 200px;" src="/img/nu.png"/>
+				<div>
+					<img style="width: 20px;height: 20px;vertical-align: middle;" src="/img/loc.png"/>
+					Ahmedabad, Gujarat, India
+				</div>
+			</div>
+		</div>
+		
+		<div id="uopx-container" class="exp-detail-container">
+			<div id="uopx-info" class="exp-info-container">
+				<h3>University of Phoenix</h3>
+				Software Developer Intern
+				<ul>
+					<li>Working as Data Engineer intern at University of Phoenix to contribute in system design for successful cloud migration</li>
+					<li>Built Big Data pipeline on cloud using Kafka for data pipelining, S3 for data lake, Glue for ETL, Redshift for data warehousing</li>
+					<li>Implemented event-based processing using AWS Lambda for event driven jobs</li>
+					<li>Developed an application to extract data from Salesforce using REST API and generalized the pipeline making it possible to extract all Salesforce objects instead of their current fixed 6 Salesforce objects</li>
+				</ul>
+			</div>
+			<div id="uopx-loc" class="exp-loc-container">
+				<img style="width: 200px;height: 200px;" src="/img/uopx2.jpg"/>
+				<div>
+					<img style="width: 20px;height: 20px;vertical-align: middle;" src="/img/loc.png"/>
+					Phoenix, Arizona, USA
+				</div>
+			</div>
+		</div>
+		
+		<div id="samsung-container" class="exp-detail-container">
+			<div id="uopx-info" class="exp-info-container">
+				<h3>Samsung R & D Institute</h3>
+				Software Developer Intern
+				<ul>
+					<li>Collaborated in a team of four to develop a Health application on Tizen OS.</li>
+					<li>The application was developed as a Web-app on Samsung Smart TV and Samsung Gear.</li>
+					<li>Various Fitness features and programs were implemented on the TV Application. The Gear performed various sync operations with the TV application as well as had various operations to control the TV and application over Wi-Fi.</li>
+					<li>Was also part of another Health project for Android called Health Record Management System. I was responsible for Text extraction from images using technologies such as Tesseract-OCR and OpenCV.</li>
+				</ul>
+			</div>
+			<div id="samsung-loc" class="exp-loc-container">
+				<img style="width: 250px;/*height: 200px;*/" src="/img/samsung.png"/>
+				<div>
+					<img style="width: 20px;height: 20px;vertical-align: middle;" src="/img/loc.png"/>
+					Noida, Uttar Pradesh, India
+				</div>
+			</div>
+		</div>
+		
+		<div id="civic-container" class="exp-detail-container">
+			<div id="civic-info" class="exp-info-container">
+				<h3>Civic Infotech</h3>
+				Software Developer Intern
+				<ul>
+					<li>Designed and implemented an accounting desktop application using Java Swing and MySQL.</li>
+					<li>The application stores financial transactions, generates and maintains invoice records, performs tax calculations and auto-fill forms based on stored record.</li>
+				</ul>
+			</div>
+			<div id="civic-loc" class="exp-loc-container">
+				<img style="width: 120px;height: 120px;" src="/img/civicc.jpg"/>
+				<div>
+					<img style="width: 20px;height: 20px;vertical-align: middle;" src="/img/loc.png"/>
+					Ahmedabad, Gujarat, India
+				</div>
+			</div>
+		</div>
+		
+		<div class="section-break">
+			<div class="section-header"><h2>Skills</h2></div>
+			<div class="section-seperator"></div>
+		</div>
+		
+		<div id="skill-header-container">
+			<h4>Languages</h4>
+			<h4>Tools & Technologies</h4>
+			<h4>Frameworks & Libraries</h4>
+		</div>
+		
+		<div id="skills-container" style="height: 270px; padding-left: 50px; padding-right: 30px;">
+			<div id="skill-container-left" style="display: inline-block;width: 32%;height: 100%;"><table id="lang-table" class="skilltable"></table></div>
+			<div id="skill-container-mid" style="display: inline-block;width: 32%;height: 100%;"><table id="tool-table" class="skilltable"></table></div>
+			<div id="skill-container-right" style="display: inline-block;width: 32%;height: 100%;"><table id="lib-table" class="skilltable"></table></div>
+		</div>
+		
+		<div id="skills-controller" style="text-align: end;">
+		Filter projects and work experience having 
+		<select id="filter-type-options" style="background: #d9d9d9; padding: 3px; border: 0px;">
+			<option value="any">ANY</option>
+			<option value="all">ALL</option>    
+		</select>		
+		selected skills
+		</div>
+		
+		<div class="section-break">
+			<div class="section-header"><h2>Academic Projects</h2></div>
+			<div class="section-seperator"></div>
+		</div>
+		
+		<div id="project-num-controller" style="text-align: end;">
+		Show top  
+		<select id="project-num-options" style="background: #d9d9d9; padding: 3px; border: 0px;">
+			
+			<option value="1">1</option>
+			<option value="3">3</option>   
+			<option value="5" selected>5</option>   
+			<option value="7">7</option> 			
+			<option value="10">10</option>    
+			<option value="100">ALL</option>			
+		</select>		
+		projects
+		</div>
+		
+		<div id="academic-project-container">
+			<div id="deblurgan-project" class="project-container">
+				<h4>DeblurGAN</h4>
+				<ul>
+					<li>Implemented a Generator-Discriminator GAN model for image deblurring task. The performance was evaluated on three different kinds of datasets and introducing different kinds of blur defects of varying intensity.</li>
+					<li>Improved the baseline Pix2Pix GAN model by addition of Residual Layers between the layers and implementing Perceptual loss function.</li>
+				</ul>
+			</div>
+			
+			<div id="nlp-project" class="project-container">
+				<h4>Section Classification in Medical Text</h4>
+				<ul>
+					<li>Implementation of deep learning models for the task of section classification in clinical notes in i2b2 dataset</li>
+					<li>Performed various data preprocessing tasks such as Named Entity Recognition, cleaning and vectorization using spaCy and GloVe</li>
+					<li>Compared and evaluated the capabilities of Bi-LSTM and CNN based networks in the domain of Natural Language Processing</li>
+				</ul>
+			</div>
+			
+			<div id="nn-project" class="project-container">
+				<h4>Neural Network</h4>
+				<ul>
+					<li>Implementation and evaluation of Artificial Neural Network and various gradient decent optimization techniques without the use of any libraries. Performance of ADAM, RMSProp, Nestrov Accelerated Gradient decent and Classical momentum were compared on Fashion MNIST data.</li>
+				</ul>
+			</div>
+			
+			<div id="aes-project" class="project-container">
+				<h4>Advanced Encryption System</h4>
+				<ul>
+					<li>Implementation of file encryption using AES following various secure coding practices and standards</li>
+					<li>The encryption algorithm with 128, 192 and 256-bit key length was implemented following the Federal Information Processing Standard 197 (FIPS-197). Various modes of operation using 128-bit block length were implemented</li>
+				</ul>
+			</div>
+			
+			<div id="fer-project" class="project-container">
+				<h4>Real time Facial Emotion Recognition</h4>
+				<ul>
+					<li>Implementation and evaluation of different deep Convolutional Neural Network architectures and Transfer Learning techniques to identify facial emotion of a person on live video feed using Tensorflow</li>
+				</ul>
+			</div>
+			
+			<div id="tesseract-project" class="project-container">
+				<h4>Real time text extraction</h4>
+				<ul>
+					<li>A computer vision project to extract text from images and videos and translate it to desired language</li>
+					<li>Implemented Stroke-Width-Transform algorithm for text detection and Google’s Tesseract OCR engine to extract text from Region-Of-Interest</li>
+				</ul>
+			</div>
+			
+			<div id="rlq-project" class="project-container">
+				<h4>Tic-Tac-Toe</h4>
+				<ul>
+					<li>Developed a tic-tac-toe game to play with bot with varying difficulty levels and a multiplayer option. Implemented a bot using reinforcement learning mechanism to learn from itself</li>
+				</ul>
+			</div>
+			
+			<div id="aibot-project" class="project-container">
+				<h4>Jarvis - Personal Assistant Bot</h4>
+				<ul>
+					<li>A voice controlled personal assistant bot developed using scikit and nltk to perform web search, dictionary search, extracting action items from emails, start/stop applications and home automation</li>
+				</ul>
+			</div>
+			
+			<div id="androidgallery-project" class="project-container">
+				<h4>FSync Cloud Gallery</h4>
+				<ul>
+					<li>An android application to view and store photos over cloud using firebase platform. Photos captured are immediately synced between multiple devices and can be shared with other people</li>
+				</ul>
+			</div>
+			
+			<div id="osterminal-project" class="project-container">
+				<h4>XTerminal</h4>
+				<ul>
+					<li>A shell that is capable to run basic commands, perform I/O redirection and execute programs</li>
+				</ul>
+			</div>
+			
+			<div id="androidwisesplit-project" class="project-container">
+				<h4>WiseSplit</h4>
+				<ul>
+					<li>The main objective of the project was to make the android application to track and settle up expenses between people or within groups. It provides an intuitive and easy way to enter and split bills</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="section-break">
+			<div class="section-header"><h2>Hobbies</h2></div>
+			<div class="section-seperator"></div>
+		</div>
+		
+		<div id="hobbies-award-container" style="text-align: center;">
+			
+		</div>
+		</div>
+		
 		<script src='./scripts/libs/d3.js'></script>
 		<script src='./scripts/libs/d3.queue.js'></script>	
+
+		
+		<script src='./scripts/workedu.js'></script>
+		<script src='./scripts/skills.js'></script>
+		<script src='./scripts/projects.js'></script>
+		<script src='./scripts/hobbies.js'></script>
 		<script src='./scripts/index.js'></script>
 	</body>
 </html>
