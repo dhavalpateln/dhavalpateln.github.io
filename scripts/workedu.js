@@ -13,7 +13,7 @@
 			id: "uopx",
 			org: "University of Phoenix",
 			div: document.getElementById('uopx-container'),
-			keywords: ['aws', 'java', 'python', 'oop', 'spring', 'jira', 'git', 'sql', 'postman', 'nodejs', 'intellij'],
+			keywords: ['aws', 'java', 'python', 'oop', 'spring', 'jira', 'git', 'sql', 'postman', 'nodejs', 'intellij', 'pandas'],
 			start: new Date(2019, 4, 25, 0, 0, 0),
 			end: new Date(2019, 10, 24, 0, 0, 0)
 		},
